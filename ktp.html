@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ID Authentication - Purwadadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content-body">
+    <div class="blueprint-grid-overlay"></div>
+
+    <div class="econ-container">
+        <div class="op-header">
+            <div class="sys-status"><span class="blink-dot"></span> ID_AUTH // BIO_METRIC_SCANNING</div>
+            <h1 class="op-main-title">IDENTITY REGISTRATION</h1>
+            <p class="op-subtitle">Sistem pendataan identitas penduduk Kecamatan Purwadadi.</p>
+        </div>
+
+        <form class="auth-form">
+            <div class="field-group">
+                <label>NAMA LENGKAP</label>
+                <input type="text" placeholder="INPUT FULL NAME...">
+            </div>
+            
+            <div class="form-row">
+                <div class="field-group">
+                    <label>TEMPAT LAHIR</label>
+                    <input type="text" placeholder="CITY...">
+                </div>
+                <div class="field-group">
+                    <label>TANGGAL LAHIR</label>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label>STATUS // KATEGORI</label>
+                <select>
+                    <option>-- SELECT CATEGORY --</option>
+                    <option>STATUS PERKAWINAN</option>
+                </select>
+            </div>
+
+            <div class="field-group">
+                <label>ALAMAT DOMISILI</label>
+                <textarea rows="3" placeholder="INPUT COORDINATES/ADDRESS..."></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-command">EXECUTE_SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chain of Command - Purwadadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content-body">
+
+    <!-- Overlay Efek Monitor Tabung Militer -->
+    <div class="crt-overlay"></div>
+
+    <div class="command-container">
+        
+        <!-- Header Halaman -->
+        <div class="command-header">
+            <div class="sys-status">
+                <span class="blink-dot"></span> CO_DATABASE // HIERARCHICAL_CHAIN
+            </div>
+            <h1 class="command-main-title">CHAIN OF COMMAND</h1>
+            <p class="command-subtitle">Hierarki komando struktural organisasi pertahanan administratif Kecamatan Purwadadi.</p>
+            <div class="radar-line"></div>
+        </div>
+
+        <!-- LAYOUT UTAMA: SPLIT SCREEN (Bagan di Kiri, Detail Dokumen di Kanan) -->
+        <div class="command-layout">
+            
+            <!-- BAGIAN KIRI: DIAGRAM POHON STRUKTUR -->
+            <div class="tree-sector">
+                
+                <!-- LEVEL 1: CAMAT (CHIEF COMMANDER) -->
+                <div class="tree-level level-1">
+                    <div class="node-card chief active-node" onclick="viewDossier('camat')">
+                        <div class="node-border"></div>
+                        <span class="node-rank">[SUPREME COMMANDER]</span>
+                        <h4 class="node-title">CAMAT PURWADADI</h4>
+                        <span class="node-name">Drs. H. Dadang Darmawan, M.Si</span>
+                        <div class="node-pulse"></div>
+                    </div>
+                </div>
+
+                <!-- LINE KONEKTOR DOWN -->
+                <div class="connector-line vertical"></div>
+
+                <!-- LEVEL 2: SEKRETARIS (CHIEF OF STAFF) -->
+                <div class="tree-level level-2">
+                    <div class="node-card staff" onclick="viewDossier('sekmat')">
+                        <div class="node-border"></div>
+                        <span class="node-rank">[CHIEF OF STAFF]</span>
+                        <h4 class="node-title">SEKRETARIS KECAMATAN</h4>
+                        <span class="node-name">Sopian, S.Sos., M.Si</span>
+                    </div>
+                </div>
+
+                <!-- LINE KONEKTOR DOWN -->
+                <div class="connector-line vertical"></div>
+
+                <!-- LEVEL 3: SEKSI-SEKSI (DIVISION LEADS) -->
+                <div class="tree-level level-3">
+                    <div class="node-grid">
+                        
+                        <!-- KASI PEMERINTAHAN -->
+                        <div class="node-card division" onclick="viewDossier('kasi_pem')">
+                            <div class="node-border"></div>
+                            <span class="node-rank">DIV-01</span>
+                            <h4 class="node-title">KASI PEMERINTAHAN</h4>
+                            <span class="node-name">Subsektor Tata Praja</span>
+                        </div>
+
+                        <!-- KASI TRANTIB -->
+                        <div class="node-card division" onclick="viewDossier('kasi_trantib')">
+                            <div class="node-border"></div>
+                            <span class="node-rank">DIV-02</span>
+                            <h4 class="node-title">KASI TRANTIB</h4>
+                            <span class="node-name">Keamanan & Ketertiban</span>
+                        </div>
+
+                        <!-- KASI PMD -->
+                        <div class="node-card division" onclick="viewDossier('kasi_pmd')">
+                            <div class="node-border"></div>
+                            <span class="node-rank">DIV-03</span>
+                            <h4 class="node-title">KASI PMD</h4>
+                            <span class="node-name">Pemberdayaan Sektor</span>
+                        </div>
+
+                        <!-- KASI KESSOS -->
+                        <div class="node-card division" onclick="viewDossier('kasi_kessos')">
+                            <div class="node-border"></div>
+                            <span class="node-rank">DIV-04</span>
+                            <h4 class="node-title">KASI KESSOS</h4>
+                            <span class="node-name">Kesejahteraan Rakyat</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BAGIAN KANAN: PANEL DOSSIER HOLOGRAM (SANGAT INTERAKTIF) -->
+            <div class="dossier-sector">
+                <div class="dossier-card">
+                    <div class="dossier-glow"></div>
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-title">DOSSIER_DECRYPTER.EXE</span>
+                    </div>
+                    
+                    <!-- Wadah Informasi yang Berganti-ganti -->
+                    <div id="dossier-display" class="dossier-body">
+                        <!-- Tampilan Default Sebelum Diklik -->
+                        <div class="dossier-placeholder">
+                            <div class="scanner-laser"></div>
+                            <p class="placeholder-text">// WAITING FOR SIGNAL INPUT...</p>
+                            <p class="placeholder-sub">Silakan klik salah satu kartu komando di sebelah kiri untuk mendekripsi file dossier personalia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPT DECRYPTER DATA DOSSIER PERSONALIA -->
+    <script>
+        // Database Personalia Kecamatan
+        const personnelData = {
+            camat: {
+                title: "CAMAT PURWADADI",
+                rank: "SUPREME COMMANDER // PEMBINA TK. I",
+                name: "Drs. H. Dadang Darmawan, M.Si",
+                nip: "19680512 199003 1 005",
+                status: "ACTIVE_DUTY",
+                mandate: "Memimpin, mengoordinasikan, dan mengendalikan seluruh wilayah pertahanan administratif Kecamatan Purwadadi guna menyelaraskan roda pembangunan daerah."
+            },
+            sekmat: {
+                title: "SEKRETARIS KECAMATAN",
+                rank: "CHIEF OF STAFF // PENATA TK. I",
+                name: "Sopian, S.Sos., M.Si",
+                nip: "19741022 199803 1 002",
+                status: "ACTIVE_DUTY",
+                mandate: "Mengendalikan urusan staf administrasi, manajemen perencanaan keuangan, pelayanan logistik internal, serta koordinasi antar-seksi operasional."
+            },
+            kasi_pem: {
+                title: "KASI PEMERINTAHAN",
+                rank: "DIVISION LEAD-01 // PENATA",
+                name: "Hj. Nina Herlina, S.IP",
+                nip: "19720815 199303 2 003",
+                status: "OPERATIONAL",
+                mandate: "Mengelola urusan administrasi pertanahan, kependudukan sektor, koordinasi batas wilayah komando, dan pembinaan pemerintahan desa."
+            },
+            kasi_trantib: {
+                title: "KASI TRANTIB",
+                rank: "DIVISION LEAD-02 // PENATA",
+                name: "Ahmad Jaelani, S.Sos",
+                nip: "19780402 200501 1 008",
+                status: "TACTICAL_READY",
+                mandate: "Menyelenggarakan ketenteraman publik, penegakan peraturan daerah, pengawasan wilayah rawan konflik, serta penanggulangan keadaan darurat."
+            },
+            kasi_pmd: {
+                title: "KASI PMD",
+                rank: "DIVISION LEAD-03 // PENATA",
+                name: "Dede Suhendar, SE",
+                nip: "19800911 200902 1 003",
+                status: "OPERATIONAL",
+                mandate: "Mengoordinasikan pemberdayaan masyarakat, pembinaan badan usaha milik desa, serta pengawasan dana pembangunan sektor pedesaan."
+            },
+            kasi_kessos: {
+                title: "KASI KESEJAHTERAAN SOSIAL",
+                rank: "DIVISION LEAD-04 // PENATA",
+                name: "Iis Ismawati, S.Ag",
+                nip: "19751105 200701 2 004",
+                status: "OPERATIONAL",
+                mandate: "Mengelola bantuan sosial kemasyarakatan, penanganan kemiskinan ekstrim, pelayanan kesehatan wilayah, serta urusan keagamaan sektor."
+            }
+        };
+
+        function viewDossier(personKey) {
+            // 1. Berikan efek highlight active pada kartu yang diklik
+            document.querySelectorAll('.node-card').forEach(card => {
+                card.classList.remove('active-node');
+            });
+            event.currentTarget.classList.add('active-node');
+
+            // 2. Ambil data person
+            const data = personnelData[personKey];
+            const display = document.getElementById('dossier-display');
+
+            // 3. Render HTML Dossier baru dengan animasi kedip pemindaian fiktif
+            display.innerHTML = `
+                <div class="dossier-active">
+                    <div class="dossier-header-panel">
+                        <span class="dossier-badge">${data.status}</span>
+                        <h3 class="dossier-title">// ${data.title}</h3>
+                        <span class="dossier-rank-txt">${data.rank}</span>
+                    </div>
+                    
+                    <div class="dossier-grid-info">
+                        <div class="dossier-row">
+                            <span class="lbl">NAME:</span>
+                            <span class="val highlight">${data.name}</span>
+                        </div>
+                        <div class="dossier-row">
+                            <span class="lbl">SERVICE_ID (NIP):</span>
+                            <span class="val">${data.nip}</span>
+                        </div>
+                    </div>
+
+                    <div class="dossier-mandate-box">
+                        <h5 class="mandate-title">[OPERATIONAL MANDATE]</h5>
+                        <p class="mandate-text">${data.mandate}</p>
+                    </div>
+                    
+                    <div class="dossier-footer">
+                        <span class="decrypted-tag">SYSTEM_DECRYPTED_OK // CO_LEVEL_SECURED</span>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

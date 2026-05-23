@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Historical Codex - Purwadadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content-body">
+
+    <!-- Overlay Efek Monitor Tabung Militer -->
+    <div class="crt-overlay"></div>
+
+    <!-- Kontainer Utama Codex -->
+    <div class="codex-container">
+        
+        <!-- Header Codex -->
+        <div class="codex-header">
+            <div class="sys-status">
+                <span class="blink-dot"></span> ARCHIVE_DATABASE // SEJARAH_PURWADADI
+            </div>
+            <h1 class="codex-title">THE HISTORICAL CODEX</h1>
+            <div class="radar-line"></div>
+        </div>
+
+        <!-- SUB-MENU TAB NAVIGASI -->
+        <div class="tab-menu-wrapper">
+            <div class="tab-menu">
+                <button class="tab-btn active" onclick="gantiEra('era1')">PRASEJARAH</button>
+                <button class="tab-btn" onclick="gantiEra('era2')">ERA HINDU</button>
+                <button class="tab-btn" onclick="gantiEra('era3')">ERA ISLAM</button>
+                <button class="tab-btn" onclick="gantiEra('era4')">KOLONIALISME</button>
+                <button class="tab-btn" onclick="gantiEra('era5')">NASIONALISME</button>
+                <button class="tab-btn" onclick="gantiEra('era6')">ERA JEPANG</button>
+                <button class="tab-btn" onclick="gantiEra('era7')">KEMERDEKAAN</button>
+            </div>
+        </div>
+
+        <!-- PANEL DISPLAY KONTEN -->
+        <div class="codex-display">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">DECRYPTED_FILES_FULL_VERSION.DAT</span>
+            </div>
+            
+            <div class="codex-content">
+                
+                <!-- 1. PRASEJARAH -->
+                <div id="era1" class="tab-content active">
+                    <div class="grid-split">
+                        <div class="text-side">
+                            <h3 class="era-title">// BAGIAN 01: ERA PRASEJARAH (ZAMAN BATU & LOGAM)</h3>
+                            <p class="era-text">
+                                Jauh sebelum terbentuknya sistem pemerintahan modern, wilayah geografis yang kini kita kenal sebagai Kecamatan Purwadadi merupakan zona ekologis yang sangat vital. Secara geologis, wilayah Subang bagian tengah ini dialiri oleh beberapa aliran sungai purba yang membawa sedimen vulkanik subur dari pegunungan di bagian selatan Jawa Barat. Kondisi tanah yang sangat subur serta ketersediaan air yang melimpah menjadikan kawasan ini sebagai habitat ideal bagi flora dan fauna purba.
+                            </p>
+                            <p class="era-text">
+                                Berdasarkan kajian arkeologis di wilayah regional Subang, peradaban manusia di tempat ini bermula dari masa berburu dan meramu tingkat lanjut (Mesolitikum) hingga masa bercocok tanam (Neolitikum). Komunitas manusia purba memanfaatkan gua-gua alam dan wilayah tepian sungai sebagai tempat perlindungan. Ditemukannya berbagai perkakas batu seperti kapak persegi, beliung persegi, serta sisa-sisa gerabah kuno membuktikan adanya aktivitas domestifikasi dan pertanian awal yang terstruktur dengan baik.
+                            </p>
+                        </div>
+                        <div class="image-side">
+                            <div class="image-frame">
+                                <img src="gambar/prasejarah.png" class="era-image" onerror="this.src='https://images.unsplash.com/photo-1599733589046-9b8308b5b50d?auto=format&fit=crop&w=500&q=80'">
+                                <div class="frame-corner top-left"></div>
+                                <div class="frame-corner top-right"></div>
+                                <div class="frame-corner bottom-left"></div>
+                                <div class="frame-corner bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. ERA HINDU -->
+                <div id="era2" class="tab-content">
+                    <div class="grid-split">
+                        <div class="text-side">
+                            <h3 class="era-title">// BAGIAN 02: PERADABAN HINDU-BUDHA (TARUMANEGARA - PAJAJARAN)</h3>
+                            <p class="era-text">
+                                Fajar sejarah tertulis di Jawa Barat ditandai oleh dominasi Kerajaan Tarumanegara pada abad ke-4 hingga ke-7 Masehi. Wilayah Purwadadi, yang terletak di antara jalur strategis pedalaman Jawa Barat dan pesisir utara, berada di bawah kendali pengaruh kebudayaan ini. Sungai Cipunagara yang mengalir di wilayah sekitar menjadi urat nadi transportasi penting yang menghubungkan pelabuhan kuno pesisir dengan pusat logistik pedalaman.
+                            </p>
+                            <p class="era-text">
+                                Setelah pudarnya pengaruh Tarumanegara, kepemimpinan wilayah beralih ke Kerajaan Sunda (Pajajaran). Pada era ini, Purwadadi berkembang sebagai wilayah agraris penyokong kebutuhan pangan kerajaan. Masyarakat lokal menerapkan sistem pertanian huma dan sawah basah tradisional yang sangat teratur. Hubungan erat dengan pusat kerajaan terjalin melalui upeti berkala berupa hasil bumi berkualitas tinggi, menunjukkan kepatuhan sekaligus kemakmuran sistem feodal Sunda kuno di kawasan ini.
+                            </p>
+                        </div>
+                        <div class="image-side">
+                            <div class="image-frame">
+                                <img src="gambar/sejarah.hindu.jpg" class="era-image" onerror="this.src='https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=500&q=80'">
+                                <div class="frame-corner top-left"></div>
+                                <div class="frame-corner top-right"></div>
+                                <div class="frame-corner bottom-left"></div>
+                                <div class="frame-corner bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. ERA ISLAM -->
+                <div id="era3" class="tab-content">
+                    <div class="grid-split">
+                        <div class="text-side">
+                            <h3 class="era-title">// BAGIAN 03: PENYEBARAN AGAMA & ERA ISLAM</h3>
+                            <p class="era-text">
+                                Runtuhnya Kerajaan Pajajaran pada abad ke-16 memicu perubahan drastis pada peta politik dan spiritual di tanah Pasundan. Kekuatan baru dari Kesultanan Cirebon dan Kesultanan Banten mulai menyebarkan pengaruh keagamaan dan kekuasaan administratifnya hingga ke pelosok Subang. Purwadadi menjadi salah satu titik persinggahan penting bagi para ulama, juru dakwah, serta prajurit Islam yang melintas dari wilayah pesisir utara menuju dataran tinggi Priangan.
+                            </p>
+                            <p class="era-text">
+                                Proses islamisasi di Purwadadi berlangsung secara damai melalui pendekatan kultural yang memadukan tradisi lokal Sunda dengan nilai-nilai tauhid. Di masa ini, institusi tradisional seperti pesantren kuno dan langgar mulai bermunculan sebagai pusat pendidikan moral serta sosial masyarakat. Transformasi ini mengubah tatanan hukum adat setempat menjadi lebih selaras dengan syariat Islam, melahirkan masyarakat relijius yang menjunjung tinggi kebersamaan dan gotong-royong.
+                            </p>
+                        </div>
+                        <div class="image-side">
+                            <div class="image-frame">
+                                <img src="gambar/sejarah.islam.jpg" class="era-image" onerror="this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=500&q=80'">
+                                <div class="frame-corner top-left"></div>
+                                <div class="frame-corner top-right"></div>
+                                <div class="frame-corner bottom-left"></div>
+                                <div class="frame-corner bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. KOLONIALISME -->
+                <div id="era4" class="tab-content">
+                    <div class="grid-split">
+                        <div class="text-side">
+                            <h3 class="era-title">// BAGIAN 04: ERA KOLONIALISME BARAT (P&T LANDS)</h3>
+                            <p class="era-text">
+                                Sejarah Purwadadi mengalami pergeseran paling radikal di bawah kolonialisme Hindia Belanda dengan berdirinya perusahaan raksasa swasta asing *Pamanoekan en Tjiasemlanden* (P&T Lands). Hak kelola swasta atas tanah-tanah luas di kawasan Subang mengubah Purwadadi menjadi salah satu pusat industri perkebunan tebu, kopi, karet, dan perkebunan padi berskala raksasa. Pemerintah kolonial membangun infrastruktur masif berupa jaringan jalan raya dan kanal irigasi untuk mengeksploitasi hasil bumi secara maksimal.
+                            </p>
+                            <p class="era-text">
+                                Di satu sisi, pembangunan ini memperkenalkan modernisasi pertanian, teknologi penggilingan padi, serta tata ruang wilayah yang rapi. Namun di sisi lain, rakyat lokal dipaksa tunduk pada sistem kerja wajib yang eksploitatif dan pengenaan pajak tanah yang sangat memberatkan. Kontras sosial yang sangat tajam tercipta antara para administratur Eropa yang tinggal di rumah-rumah mewah bergaya kolonial, dengan para buruh tani pribumi yang hidup dalam belenggu kemiskinan dan penindasan sistem perkebunan partikelir.
+                            </p>
+                        </div>
+                        <div class="image-side">
+                            <div class="image-frame">
+                                <img src="gambar/sejarah.kolonialisme.jpg" class="era-image" onerror="this.src='https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=500&q=80'">
+                                <div class="frame-corner top-left"></div>
+                                <div class="frame-corner top-right"></div>
+                                <div class="frame-corner bottom-left"></div>
+                                <div class="frame-corner bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. NASIONALISME -->
+                <div id="era5" class="tab-content">
+                    <div class="grid-split">
+                        <div class="text-side">
+                            <h3 class="era-title">// BAGIAN 05: KEBANGKITAN GERAKAN NASIONALISME</h3>
+                            <p class="era-text">
+                                Memasuki awal abad ke-20, penderitaan yang berkepanjangan melahirkan kesadaran kolektif untuk merdeka. Di bawah hembusan angin Kebangkitan Nasional, para pemuda revolusioner dan tokoh masyarakat Purwadadi mulai mendirikan cabang-cabang organisasi pergerakan nasional seperti Sarekat Islam (SI) dan Paguyuban Pasundan. Pertemuan-pertemuan rahasia sering kali digelar di tengah perkebunan dan rumah-rumah penduduk untuk menghindari intelijen militer Belanda.
+                            </p>
+                            <p class="era-text">
+                                Gerakan boikot pajak dan aksi mogok kerja para buruh perkebunan padi sering kali dikoordinasikan secara taktis. Purwadadi menjadi zona yang sangat rawan bagi para tuan tanah kolonial karena keberanian rakyatnya yang mulai menuntut hak kepemilikan tanah kembali. Semangat perjuangan ini terus dipupuk melalui surat kabar perjuangan yang disebarkan secara sembunyi-sembunyi, mempersiapkan mental rakyat menghadapi pergolakan politik global yang akan segera datang.
+                            </p>
+                        </div>
+                        <div class="image-side">
+                            <div class="image-frame">
+                                <img src="gambar/sejarah.nasionalisme.webp" class="era-image" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=500&q=80'">
+                                <div class="frame-corner top-left"></div>
+                                <div class="frame-corner top-right"></div>
+                                <div class="frame-corner bottom-left"></div>
+                                <div class="frame-corner bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. ERA JEPANG -->
+                <div id="era6" class="tab-content">
+                    <div class="grid-split">
+                        <div class="text-side">
+                            <h3 class="era-title">// BAGIAN 06: PENDUDUKAN MILITER DAI NIPPON</h3>
+                            <p class="era-text">
+                                Kejutan sejarah terjadi pada Maret 1942 ketika armada militer Kekaisaran Jepang mendarat secara masif di pangkalan udara Kalijati, Subang. Hanya dalam hitungan hari, kekuasaan kolonial Belanda runtuh total dan digantikan oleh kediktatoran militer Jepang. Wilayah Purwadadi segera berubah fungsi menjadi pemasok logistik militer utama bagi perang Asia Timur Raya. Seluruh lumbung padi diawasi ketat dan hasilnya disita untuk keperluan pangan tentara Jepang.
+                            </p>
+                            <p class="era-text">
+                                Pada masa pendudukan Jepang, rakyat Purwadadi dipaksa menjalani kerja paksa (Romusha) untuk membangun pertahanan militer di berbagai daerah. Namun, ada dampak militerisasi positif di mana para pemuda setempat dilatih secara taktis di dalam organisasi semi-militer bentukan Jepang seperti PETA (*Pembela Tanah Air*), Seinendan, dan Keibodan. Pelatihan disiplin tempur dan taktik gerilya inilah yang nantinya menjadi modal berharga bagi para pemuda Purwadadi untuk angkat senjata merebut kemerdekaan penuh.
+                            </p>
+                        </div>
+                        <div class="image-side">
+                            <div class="image-frame">
+                                <img src="gambar/sejarah.jepang.jpg" class="era-image" onerror="this.src='https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?auto=format&fit=crop&w=500&q=80'">
+                                <div class="frame-corner top-left"></div>
+                                <div class="frame-corner top-right"></div>
+                                <div class="frame-corner bottom-left"></div>
+                                <div class="frame-corner bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. KEMERDEKAAN -->
+                <div id="era7" class="tab-content">
+                    <div class="grid-split">
+                        <div class="text-side">
+                            <h3 class="era-title">// BAGIAN 07: PROKLAMASI & ERA KEMERDEKAAN</h3>
+                            <p class="era-text">
+                                Pasca berkumandangnya Proklamasi Kemerdekaan 17 Agustus 1945, perjuangan belumlah usai. Pasukan Sekutu dan NICA (Belanda) mencoba merebut kembali wilayah Jawa Barat. Rakyat Purwadadi bersama barisan pejuang bersenjata terlibat dalam berbagai pertempuran sengit mempertahankan kedaulatan wilayah sepanjang Agresi Militer Belanda I dan II. Kawasan persawahan dan perkebunan karet Purwadadi menjadi medan perang gerilya yang menguras tenaga musuh.
+                            </p>
+                            <p class="era-text">
+                                Setelah pengakuan kedaulatan penuh oleh Belanda pada tahun 1949, struktur wilayah Indonesia mulai ditata kembali secara berdaulat. Berdasarkan ketetapan administrasi daerah pasca-kemerdekaan, Purwadadi resmi disahkan sebagai unit pemerintahan Kecamatan yang mandiri di bawah naungan Kabupaten Subang. Kini, wilayah yang tangguh ini terus bertransformasi dari pusat agraris lumbung padi legendaris menjadi kawasan industri dan pemukiman modern tanpa melupakan nilai historis perjuangan para leluhurnya.
+                            </p>
+                        </div>
+                        <div class="image-side">
+                            <div class="image-frame">
+                                <img src="gambar/sejarah.merdeka.webp" class="era-image" onerror="this.src='https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=500&q=80'">
+                                <div class="frame-corner top-left"></div>
+                                <div class="frame-corner top-right"></div>
+                                <div class="frame-corner bottom-left"></div>
+                                <div class="frame-corner bottom-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT TRANSISI TAB SINKRONISASI GAME -->
+    <script>
+        function gantiEra(idEra) {
+            // 1. Matikan kelas active di semua tombol tab
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // 2. Sembunyikan semua konten era
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // 3. Aktifkan tombol yang sedang diklik saat ini
+            if (event && event.currentTarget) {
+                event.currentTarget.classList.add('active');
+            }
+
+            // 4. Munculkan konten era yang sesuai dengan ID
+            const targetContent = document.getElementById(idEra);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

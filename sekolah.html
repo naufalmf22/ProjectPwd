@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Academic Archive - Purwadadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content-body">
+    <div class="crt-overlay"></div>
+
+    <div class="econ-container">
+        <div class="op-header">
+            <div class="sys-status"><span class="blink-dot"></span> ACADEMIC_ARCHIVE_NODE // ONLINE</div>
+            <h1 class="op-main-title">ACADEMIC NODES</h1>
+            <p class="op-subtitle">Sistem pendataan infrastruktur pendidikan wilayah Purwadadi.</p>
+        </div>
+
+        <div class="phase-tabs-container">
+            <button class="phase-tab active" onclick="switchPhase(event, 'sd-node')">[ SD ]</button>
+            <button class="phase-tab" onclick="switchPhase(event, 'smp-node')">[ SMP ]</button>
+            <button class="phase-tab" onclick="switchPhase(event, 'sma-node')">[ SMA/SMK ]</button>
+        </div>
+
+        <div class="phase-content-wrapper">
+            <!-- Node SD -->
+            <div id="sd-node" class="phase-pane active">
+                <div class="node-list">
+                    <div class="node-item"><span class="node-id">01</span><span class="node-name">SD Negeri Belendung</span><span class="status-badge negeri">NEGERI</span><span class="node-loc">Belendung</span></div>
+                    <div class="node-item"><span class="node-id">02</span><span class="node-name">SD Negeri Purwadadi Barat</span><span class="status-badge negeri">NEGERI</span><span class="node-loc">Purwadadi Barat</span></div>
+                    <div class="node-item"><span class="node-id">03</span><span class="node-name">SD Negeri Wanakerta</span><span class="status-badge negeri">NEGERI</span><span class="node-loc">Wanakerta</span></div>
+                    <div class="node-item"><span class="node-id">04</span><span class="node-name">SD Negeri Pasirbungur</span><span class="status-badge negeri">NEGERI</span><span class="node-loc">Pasirbungur</span></div>
+                </div>
+            </div>
+
+            <!-- Node SMP -->
+            <div id="smp-node" class="phase-pane">
+                <div class="node-list">
+                    <div class="node-item"><span class="node-id">01</span><span class="node-name">SMP Negeri 1 Purwadadi</span><span class="status-badge negeri">NEGERI</span><span class="node-loc">Pasirbungur</span></div>
+                    <div class="node-item"><span class="node-id">02</span><span class="node-name">SMP Negeri 2 Purwadadi</span><span class="status-badge negeri">NEGERI</span><span class="node-loc">Wanakerta</span></div>
+                    <div class="node-item"><span class="node-id">03</span><span class="node-name">SMP Negeri 3 Purwadadi</span><span class="status-badge negeri">NEGERI</span><span class="node-loc">Parapatan</span></div>
+                    <div class="node-item"><span class="node-id">04</span><span class="node-name">SMP Negeri 4 Purwadadi</span><span class="status-badge negeri">NEGERI</span><span class="node-loc">Koranji</span></div>
+                    <div class="node-item"><span class="node-id">05</span><span class="node-name">SMP Islam Purwadadi</span><span class="status-badge swasta">SWASTA</span><span class="node-loc">Pasirbungur</span></div>
+                    <div class="node-item"><span class="node-id">06</span><span class="node-name">SMP Plus Matlaul Huda</span><span class="status-badge swasta">SWASTA</span><span class="node-loc">Parapatan</span></div>
+                    <div class="node-item"><span class="node-id">07</span><span class="node-name">SMP Baitul Quran Subang</span><span class="status-badge swasta">SWASTA</span><span class="node-loc">Rancamahi</span></div>
+                </div>
+            </div>
+
+            <!-- Node SMA/SMK -->
+            <div id="sma-node" class="phase-pane">
+                <div class="node-list">
+                    <div class="node-item"><span class="node-id">01</span><span class="node-name">SMA Negeri 1 Purwadadi</span><span class="status-badge negeri">NEGERI</span><span class="node-loc">Belendung</span></div>
+                    <div class="node-item"><span class="node-id">02</span><span class="node-name">SMA Baitul Quran Subang</span><span class="status-badge swasta">SWASTA</span><span class="node-loc">Rancamahi</span></div>
+                    <div class="node-item"><span class="node-id">03</span><span class="node-name">SMAS Matlaul Huda</span><span class="status-badge swasta">SWASTA</span><span class="node-loc">Parapatan</span></div>
+                    <div class="node-item"><span class="node-id">04</span><span class="node-name">SMAS Sudirman</span><span class="status-badge swasta">SWASTA</span><span class="node-loc">Pasirbungur</span></div>
+                    <div class="node-item"><span class="node-id">05</span><span class="node-name">SMK Al-Mufti</span><span class="status-badge swasta">SWASTA</span><span class="node-loc">Wanakerta</span></div>
+                    <div class="node-item"><span class="node-id">06</span><span class="node-name">SMK Bina Industri 2</span><span class="status-badge swasta">SWASTA</span><span class="node-loc">Parapatan</span></div>
+                    <div class="node-item"><span class="node-id">07</span><span class="node-name">SMKS Gema Patriot</span><span class="status-badge swasta">SWASTA</span><span class="node-loc">Purwadadi Barat</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchPhase(evt, id) {
+            document.querySelectorAll('.phase-pane').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.phase-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

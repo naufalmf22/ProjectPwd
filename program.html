@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operation Board - Purwadadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content-body">
+
+    <div class="crt-overlay"></div>
+
+    <div class="op-container">
+        
+        <div class="op-header">
+            <div class="sys-status">
+                <span class="blink-dot"></span> OPERATION_BOARD // RUNTIME_PROGRAMS
+            </div>
+            <h1 class="op-main-title">OPERATION BOARD</h1>
+            <p class="op-subtitle">Sistem pelacakan pemenuhan program kerja taktis Kecamatan Purwadadi.</p>
+            <div class="radar-line"></div>
+        </div>
+
+        <div class="phase-tabs-container">
+            <button class="phase-tab active" onclick="switchPhase(event, 'phase1')">[ PHASE-01: SHORT_TERM ]</button>
+            <button class="phase-tab" onclick="switchPhase(event, 'phase2')">[ PHASE-02: MID_TERM ]</button>
+            <button class="phase-tab" onclick="switchPhase(event, 'phase3')">[ PHASE-03: LONG_TERM ]</button>
+        </div>
+
+        <div class="phase-content-wrapper">
+
+            <div id="phase1" class="phase-pane active">
+                <div class="phase-info-bar">// EXECUTING SHORT-TERM CRITICAL MISSIONS</div>
+                
+                <div class="prog-card" style="animation-delay: 0.1s;">
+                    <div class="prog-meta">
+                        <span class="prog-id">PROG-01</span>
+                        <span class="prog-status complete">COMPLETED</span>
+                    </div>
+                    <h4 class="prog-title">Peningkatan Kualitas Pelayanan Publik</h4>
+                    <p class="prog-desc">Meningkatkan kualitas pelayanan kepada masyarakat secara responsif di tingkat kecamatan.</p>
+                    <div class="progress-track"><div class="progress-fill" style="width: 100%;"></div></div>
+                    <span class="progress-num">100% SUCCESS RATE</span>
+                </div>
+
+                <div class="prog-card" style="animation-delay: 0.2s;">
+                    <div class="prog-meta">
+                        <span class="prog-id">PROG-02</span>
+                        <span class="prog-status ongoing">IN_PROGRESS</span>
+                    </div>
+                    <h4 class="prog-title">Administrasi Kependudukan Terintegrasi</h4>
+                    <p class="prog-desc">Meningkatkan efisiensi pelayanan administrasi kependudukan dan sistem rekam data publik digital.</p>
+                    <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+                    <span class="progress-num">85% DEPLOYED</span>
+                </div>
+
+                <div class="prog-card" style="animation-delay: 0.3s;">
+                    <div class="prog-meta">
+                        <span class="prog-id">PROG-03</span>
+                        <span class="prog-status ongoing">IN_PROGRESS</span>
+                    </div>
+                    <h4 class="prog-title">Stabilisasi Keamanan & Ketertiban</h4>
+                    <p class="prog-desc">Meningkatkan keamanan dan ketertiban masyarakat berkolaborasi dengan subsektor militer/polisi lokal.</p>
+                    <div class="progress-track"><div class="progress-fill" style="width: 70%;"></div></div>
+                    <span class="progress-num">70% SECURED</span>
+                </div>
+
+                <div class="prog-card" style="animation-delay: 0.4s;">
+                    <div class="prog-meta">
+                        <span class="prog-id">PROG-04</span>
+                        <span class="prog-status complete">COMPLETED</span>
+                    </div>
+                    <h4 class="prog-title">Musrenbang Taktis Daerah</h4>
+                    <p class="prog-desc">Mendukung pembangunan berkelanjutan yang transparan melalui wadah musyawarah perencanaan pembangunan.</p>
+                    <div class="progress-track"><div class="progress-fill" style="width: 100%;"></div></div>
+                    <span class="progress-num">100% FINALIZED</span>
+                </div>
+            </div>
+
+            <div id="phase2" class="phase-pane">
+                <div class="phase-info-bar">// QUEUED MID-TERM STRATEGIC EXPANSION</div>
+                
+                <div class="prog-card">
+                    <div class="prog-meta">
+                        <span class="prog-id">PROG-05</span>
+                        <span class="prog-status ongoing">IN_PROGRESS</span>
+                    </div>
+                    <h4 class="prog-title">Pemberdayaan Ekonomi & Penguatan UMKM</h4>
+                    <p class="prog-desc">Meningkatkan perputaran ekonomi mandiri masyarakat serta membina pelaku UMKM di sektor strategis.</p>
+                    <div class="progress-track"><div class="progress-fill" style="width: 45%;"></div></div>
+                    <span class="progress-num">45% STABILIZED</span>
+                </div>
+
+                <div class="prog-card">
+                    <div class="prog-meta">
+                        <span class="prog-id">PROG-06</span>
+                        <span class="prog-status ongoing">IN_PROGRESS</span>
+                    </div>
+                    <h4 class="prog-title">Pengawasan Akuntabilitas Pemerintah Desa</h4>
+                    <p class="prog-desc">Meningkatkan sistem pembinaan, monitoring, dan pengawasan terpadu terhadap roda pemerintahan desa.</p>
+                    <div class="progress-track"><div class="progress-fill" style="width: 60%;"></div></div>
+                    <span class="progress-num">60% OPERATIONAL</span>
+                </div>
+
+                <div class="prog-card">
+                    <div class="prog-meta">
+                        <span class="prog-id">PROG-07</span>
+                        <span class="prog-status pending">PENDING</span>
+                    </div>
+                    <h4 class="prog-title">Mobilisasi Partisipasi Pembangunan Publik</h4>
+                    <p class="prog-desc">Meningkatkan keterlibatan aktif dan gotong-royong masyarakat dalam mengeksekusi pembangunan daerah.</p>
+                    <div class="progress-track"><div class="progress-fill" style="width: 15%;"></div></div>
+                    <span class="progress-num">15% INITIALIZED</span>
+                </div>
+            </div>
+
+            <div id="phase3" class="phase-pane">
+                <div class="phase-info-bar">// STANDBY FOR LONG-TERM SUSTAINED DIRECTIVES</div>
+                
+                <div class="prog-card">
+                    <div class="prog-meta">
+                        <span class="prog-id">PROG-08</span>
+                        <span class="prog-status ongoing">IN_PROGRESS</span>
+                    </div>
+                    <h4 class="prog-title">Pembangunan Infrastruktur & Fasilitas Umum Core</h4>
+                    <p class="prog-desc">Meningkatkan ketahanan sarana prasarana fisik jalan, jembatan, dan gedung pelayanan publik utama.</p>
+                    <div class="progress-track"><div class="progress-fill" style="width: 35%;"></div></div>
+                    <span class="progress-num">35% INFRASTRUCTURE_READY</span>
+                </div>
+
+                <div class="prog-card">
+                    <div class="prog-meta">
+                        <span class="prog-id">PROG-09</span>
+                        <span class="prog-status pending">PENDING</span>
+                    </div>
+                    <h4 class="prog-title">Sistem Kesehatan & Kesejahteraan Sektor</h4>
+                    <p class="prog-desc">Meningkatkan standarisasi fasilitas kesehatan posyandu/puskesmas serta jaminan kesejahteraan sosial.</p>
+                    <div class="progress-track"><div class="progress-fill" style="width: 0%;"></div></div>
+                    <span class="progress-num">0% HOLDING_SIGNAL</span>
+                </div>
+
+                <div class="prog-card">
+                    <div class="prog-meta">
+                        <span class="prog-id">PROG-10</span>
+                        <span class="prog-status pending">PENDING</span>
+                    </div>
+                    <h4 class="prog-title">Aktivasi Pemberdayaan Sosial Kemasyarakatan</h4>
+                    <p class="prog-desc">Meningkatkan ketahanan kebudayaan, kesetaraan sosial, serta inklusivitas ekologi lingkungan.</p>
+                    <div class="progress-track"><div class="progress-fill" style="width: 5%;"></div></div>
+                    <span class="progress-num">5% PRE_PLANNING</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function switchPhase(evt, phaseId) {
+            // Sembunyikan semua panel fase
+            document.querySelectorAll('.phase-pane').forEach(pane => {
+                pane.classList.remove('active');
+            });
+
+            // Hilangkan status aktif di semua tombol tab
+            document.querySelectorAll('.phase-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Aktifkan panel dan tombol tab yang diklik
+            document.getElementById(phaseId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

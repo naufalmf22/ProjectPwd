@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sector Registry - Purwadadi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content-body">
+
+    <div class="crt-overlay"></div>
+
+    <div class="sector-container">
+        
+        <div class="sector-header-box">
+            <div class="sys-status">
+                <span class="blink-dot"></span> REGISTRY_DATABASE // 10_SEC_TERRITORIES
+            </div>
+            <h1 class="sector-main-title">TERRITORY SECTORS</h1>
+            <p class="sector-subtitle">Daftar wilayah administratif sektor Kecamatan Purwadadi Kabupaten Subang (10 Desa Terenkripsi).</p>
+            <div class="radar-line"></div>
+        </div>
+
+        <div class="sector-grid">
+            
+            <div class="sector-card" style="animation-delay: 0.1s;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="sec-code">SEC-01 // ZIP-41261</span>
+                    <span class="sec-status agrizone"><span class="status-led"></span> AGRI_ZONE</span>
+                </div>
+                <h3 class="sec-name">BELENDUNG</h3>
+                <p class="sec-brief">Sektor agrikultur dengan total luas wilayah kelola sebesar 567.318 Ha.</p>
+                <button class="intel-btn" onclick="toggleIntel('intel1')">[ VIEW INTEL ]</button>
+                
+                <div id="intel1" class="intel-drawer">
+                    <div class="intel-content">
+                        <div class="intel-row"><span>SECTOR COMMANDER:</span> <strong>Kades Belendung</strong></div>
+                        <div class="intel-row"><span>ACTIVE PERSONNEL:</span> <strong>3.295 Jiwa</strong></div>
+                        <div class="intel-row"><span>TOTAL AREA:</span> <strong>567.318 Ha</strong></div>
+                        <div class="intel-row"><span>TACTICAL STATUS:</span> <strong>Food Supply Hub</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-card" style="animation-delay: 0.15s;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="sec-code">SEC-02 // ZIP-41261</span>
+                    <span class="sec-status secured"><span class="status-led"></span> SECURED</span>
+                </div>
+                <h3 class="sec-name">KORANJI</h3>
+                <p class="sec-brief">Sektor wilayah pertahanan tengah dengan total luas wilayah kelola 827.550 Ha.</p>
+                <button class="intel-btn" onclick="toggleIntel('intel2')">[ VIEW INTEL ]</button>
+                
+                <div id="intel2" class="intel-drawer">
+                    <div class="intel-content">
+                        <div class="intel-row"><span>SECTOR COMMANDER:</span> <strong>Kades Koranji</strong></div>
+                        <div class="intel-row"><span>ACTIVE PERSONNEL:</span> <strong>4.120 Jiwa (Est)</strong></div>
+                        <div class="intel-row"><span>TOTAL AREA:</span> <strong>827.550 Ha</strong></div>
+                        <div class="intel-row"><span>TACTICAL STATUS:</span> <strong>Buffer Sektor</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-card" style="animation-delay: 0.2s;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="sec-code">SEC-03 // ZIP-41261</span>
+                    <span class="sec-status special"><span class="status-led"></span> RES_HUB</span>
+                </div>
+                <h3 class="sec-name">PAGADEN</h3>
+                <p class="sec-brief">Sektor pemukiman strategis dengan total luas wilayah kelola 500.865 Ha.</p>
+                <button class="intel-btn" onclick="toggleIntel('intel3')">[ VIEW INTEL ]</button>
+                
+                <div id="intel3" class="intel-drawer">
+                    <div class="intel-content">
+                        <div class="intel-row"><span>SECTOR COMMANDER:</span> <strong>Kades Pagaden</strong></div>
+                        <div class="intel-row"><span>ACTIVE PERSONNEL:</span> <strong>3.596 Jiwa</strong></div>
+                        <div class="intel-row"><span>TOTAL AREA:</span> <strong>500.865 Ha</strong></div>
+                        <div class="intel-row"><span>TACTICAL STATUS:</span> <strong>Residential Center</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-card" style="animation-delay: 0.25s;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="sec-code">SEC-04 // ZIP-41261</span>
+                    <span class="sec-status secured"><span class="status-led"></span> SECURED</span>
+                </div>
+                <h3 class="sec-name">PANYINGKIRAN</h3>
+                <p class="sec-brief">Sektor wilayah penghubung antar-daerah dengan total luas 522.022 Ha.</p>
+                <button class="intel-btn" onclick="toggleIntel('intel4')">[ VIEW INTEL ]</button>
+                
+                <div id="intel4" class="intel-drawer">
+                    <div class="intel-content">
+                        <div class="intel-row"><span>SECTOR COMMANDER:</span> <strong>Kades Panyingkiran</strong></div>
+                        <div class="intel-row"><span>ACTIVE PERSONNEL:</span> <strong>3.840 Jiwa (Est)</strong></div>
+                        <div class="intel-row"><span>TOTAL AREA:</span> <strong>522.022 Ha</strong></div>
+                        <div class="intel-row"><span>TACTICAL STATUS:</span> <strong>Logistic Router</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-card" style="animation-delay: 0.3s;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="sec-code">SEC-05 // ZIP-41261</span>
+                    <span class="sec-status industrial"><span class="status-led"></span> IND_ZONE</span>
+                </div>
+                <h3 class="sec-name">PARAPATAN</h3>
+                <p class="sec-brief">Sektor persimpangan ekonomi komersial dengan total luas 787.000 Ha.</p>
+                <button class="intel-btn" onclick="toggleIntel('intel5')">[ VIEW INTEL ]</button>
+                
+                <div id="intel5" class="intel-drawer">
+                    <div class="intel-content">
+                        <div class="intel-row"><span>SECTOR COMMANDER:</span> <strong>Kades Parapatan</strong></div>
+                        <div class="intel-row"><span>ACTIVE PERSONNEL:</span> <strong>5.210 Jiwa (Est)</strong></div>
+                        <div class="intel-row"><span>TOTAL AREA:</span> <strong>787.000 Ha</strong></div>
+                        <div class="intel-row"><span>TACTICAL STATUS:</span> <strong>Commercial Hub</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-card" style="animation-delay: 0.35s;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="sec-code">SEC-06 // ZIP-41261</span>
+                    <span class="sec-status special"><span class="status-led"></span> MEGA_SECTOR</span>
+                </div>
+                <h3 class="sec-name">PASIRBUNGUR</h3>
+                <p class="sec-brief">Sektor perkebunan raksasa dan terluas dengan cakupan wilayah 2.990.277 Ha.</p>
+                <button class="intel-btn" onclick="toggleIntel('intel6')">[ VIEW INTEL ]</button>
+                
+                <div id="intel6" class="intel-drawer">
+                    <div class="intel-content">
+                        <div class="intel-row"><span>SECTOR COMMANDER:</span> <strong>Kades Pasirbungur</strong></div>
+                        <div class="intel-row"><span>ACTIVE PERSONNEL:</span> <strong>7.723 Jiwa</strong></div>
+                        <div class="intel-row"><span>TOTAL AREA:</span> <strong>2.990.277 Ha</strong></div>
+                        <div class="intel-row"><span>TACTICAL STATUS:</span> <strong>Resource Core Production</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-card" style="animation-delay: 0.4s;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="sec-code">SEC-07 // ZIP-41261</span>
+                    <span class="sec-status industrial"><span class="status-led"></span> HQ_ZONE</span>
+                </div>
+                <h3 class="sec-name">PURWADADI BARAT</h3>
+                <p class="sec-brief">Sektor barat area pengembangan padat perkotaan seluas 192.345 Ha.</p>
+                <button class="intel-btn" onclick="toggleIntel('intel7')">[ VIEW INTEL ]</button>
+                
+                <div id="intel7" class="intel-drawer">
+                    <div class="intel-content">
+                        <div class="intel-row"><span>SECTOR COMMANDER:</span> <strong>Kades Purwadadi Barat</strong></div>
+                        <div class="intel-row"><span>ACTIVE PERSONNEL:</span> <strong>6.150 Jiwa (Est)</strong></div>
+                        <div class="intel-row"><span>TOTAL AREA:</span> <strong>192.345 Ha</strong></div>
+                        <div class="intel-row"><span>TACTICAL STATUS:</span> <strong>Urban Development</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-card" style="animation-delay: 0.45s;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="sec-code">SEC-08 // ZIP-41261</span>
+                    <span class="sec-status secured"><span class="status-led"></span> HQ_ZONE</span>
+                </div>
+                <h3 class="sec-name">PURWADADI TIMUR</h3>
+                <p class="sec-brief">Sektor timur pusat layanan masyarakat terpadu seluas 279.406 Ha.</p>
+                <button class="intel-btn" onclick="toggleIntel('intel8')">[ VIEW INTEL ]</button>
+                
+                <div id="intel8" class="intel-drawer">
+                    <div class="intel-content">
+                        <div class="intel-row"><span>SECTOR COMMANDER:</span> <strong>Kades Purwadadi Timur</strong></div>
+                        <div class="intel-row"><span>ACTIVE PERSONNEL:</span> <strong>5.890 Jiwa (Est)</strong></div>
+                        <div class="intel-row"><span>TOTAL AREA:</span> <strong>279.406 Ha</strong></div>
+                        <div class="intel-row"><span>TACTICAL STATUS:</span> <strong>Civic Service Core</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-card" style="animation-delay: 0.5s;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="sec-code">SEC-09 // ZIP-41261</span>
+                    <span class="sec-status agrizone"><span class="status-led"></span> AGRI_ZONE</span>
+                </div>
+                <h3 class="sec-name">RANCAMAHI</h3>
+                <p class="sec-brief">Sektor penopang komoditas pangan lokal dengan luas wilayah 520.041 Ha.</p>
+                <button class="intel-btn" onclick="toggleIntel('intel9')">[ VIEW INTEL ]</button>
+                
+                <div id="intel9" class="intel-drawer">
+                    <div class="intel-content">
+                        <div class="intel-row"><span>SECTOR COMMANDER:</span> <strong>Kades Rancamahi</strong></div>
+                        <div class="intel-row"><span>ACTIVE PERSONNEL:</span> <strong>2.120 Jiwa</strong></div>
+                        <div class="intel-row"><span>TOTAL AREA:</span> <strong>520.041 Ha</strong></div>
+                        <div class="intel-row"><span>TACTICAL STATUS:</span> <strong>Secondary Rice Supplier</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sector-card" style="animation-delay: 0.55s;">
+                <div class="card-glow"></div>
+                <div class="card-header">
+                    <span class="sec-code">SEC-10 // ZIP-41261</span>
+                    <span class="sec-status agrizone"><span class="status-led"></span> AGRI_HUB</span>
+                </div>
+                <h3 class="sec-name">WANAKERTA</h3>
+                <p class="sec-brief">Sektor hijau dengan wilayah persawahan teknis subur seluas 936.000 Ha.</p>
+                <button class="intel-btn" onclick="toggleIntel('intel10')">[ VIEW INTEL ]</button>
+                
+                <div id="intel10" class="intel-drawer">
+                    <div class="intel-content">
+                        <div class="intel-row"><span>SECTOR COMMANDER:</span> <strong>Kades Wanakerta</strong></div>
+                        <div class="intel-row"><span>ACTIVE PERSONNEL:</span> <strong>6.740 Jiwa (Est)</strong></div>
+                        <div class="intel-row"><span>TOTAL AREA:</span> <strong>936.000 Ha</strong></div>
+                        <div class="intel-row"><span>TACTICAL STATUS:</span> <strong>Primary Agricultural Core</strong></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleIntel(idIntel) {
+            const drawer = document.getElementById(idIntel);
+            const button = drawer.previousElementSibling;
+            
+            if (drawer.classList.contains('open')) {
+                drawer.classList.remove('open');
+                button.innerHTML = '[ VIEW INTEL ]';
+                button.classList.remove('active');
+            } else {
+                document.querySelectorAll('.intel-drawer').forEach(d => {
+                    d.classList.remove('open');
+                    d.previousElementSibling.innerHTML = '[ VIEW INTEL ]';
+                    d.previousElementSibling.classList.remove('active');
+                });
+
+                drawer.classList.add('open');
+                button.innerHTML = '[ SHUT DOWN INTEL ]';
+                button.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
